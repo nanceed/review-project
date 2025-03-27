@@ -13,9 +13,24 @@ body {
     background: hsl(210, 36%, 96%);
 }
 
+h2,
+h4 {
+    text-transform: capitalize;
+    margin-bottom: 0.75rem;
+    letter-spacing: 2px;
+}
+
 h2 {
     font-size: 2rem;
-    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    color: hsl(210, 22%, 49%);
 }
 
 main {
@@ -99,6 +114,52 @@ main {
     right: -0.5rem;
     border-radius: 50%;
     background:hsl(205, 78%, 60%); 
+}
+
+#author {
+    margin-bottom: 0.25rem;
+}
+
+#job {
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: hsl(210, 22%, 49%);
+    font-size: 0.85rem;
+}
+
+#info {
+    margin-bottom: 0.75rem;
+}
+
+.prev-btn {
+    color: hsl(205, 90%, 76%);
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.prev-btn:hover {
+    color: hsl(205, 78%, 60%);
+}
+
+.random-btn {
+    margin-top: 0.5rem;
+    background:hsl(205, 100%, 96%);
+    color: hsl(205, 78%, 60%);
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+    border-color:  hsl(205, 78%, 60%);
+    cursor: pointer;
+}
+
+.random-btn:hover {
+    background: hsl(205, 78%, 60%);
+    color: hsl(205, 86%, 17%);
 }
 
 
