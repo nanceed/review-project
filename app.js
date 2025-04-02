@@ -11,7 +11,7 @@ const reviews = [
         id: 2,
         name: "anna johnson",
         job: "web designer",
-        img: "http://www.course-api.com/images/person-2.jpeg",
+        img: "http://www.course-api.com/images/people/person-2.jpeg",
         text: "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal."
     },
     {
@@ -23,7 +23,8 @@ const reviews = [
     },
     {
         id: 4,
-        job: "bill anderson",
+        name: "bill anderson",
+        job: "the boss",
         img: "http://www.course-api.com/images/people/person-3.jpeg",
         text: "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic.",
     },
@@ -40,11 +41,12 @@ const nextBtn = document.querySelector(".next-btn");
 const randomBtn = document.querySelector(".random-btn");
 
 // set starting item
-let currentItem = 0;
+let currentItem = 3;
 
 // load initial item
 window.addEventListener("DOMContentLoaded", function () {
     //console.log("shake and bake");
     const item = reviews[currentItem];
     img.src = item.img;
+    author.textContent = item.name;
 });
