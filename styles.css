@@ -131,7 +131,8 @@ main {
     margin-bottom: 0.75rem;
 }
 
-.prev-btn {
+.prev-btn,
+.next-btn {
     color: hsl(205, 90%, 76%);
     font-size: 1.25rem;
     background: transparent;
@@ -141,7 +142,8 @@ main {
     cursor: pointer;
 }
 
-.prev-btn:hover {
+.prev-btn,
+.next-btn:hover {
     color: hsl(205, 78%, 60%);
 }
 
